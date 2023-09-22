@@ -10,7 +10,6 @@ const PopularEstilizado = styled.section`
 
 const ImagemEstilizada = styled.img`
     width: 212px;
-    height: 158px;
     flex-shrink: 0;
     border-radius: 20px;
     margin-bottom: 20px;

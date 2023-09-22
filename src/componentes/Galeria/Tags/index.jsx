@@ -40,11 +40,11 @@ const Tag = styled.button`
     box-sizing: border-box;
 `
 
-const Tags = () => {
+const Tags = ( {setTag} ) => {
     return <>
             <NavTagsEstilizado>
                 <NavTextoEstilizado>Busque por tags:</NavTextoEstilizado>
-                {tags.map(tag => <Tag key={tag.id}>{tag.titulo}</Tag>)}
+                <div>{tags.map(tag => <Tag key={tag.id} onClick={() => setTag(tag.tag)}>{tag.titulo}</Tag>)}</div>
             </NavTagsEstilizado>
     </>
 }
